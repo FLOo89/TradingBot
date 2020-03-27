@@ -1,3 +1,13 @@
+---
+title: "Untitled"
+author: "Mesky"
+date: "16/03/2020"
+output: 
+  pdf_document:
+    keep_tex: yes
+---
+
+```{python, eval=F}
 # base import
 import pandas as pd
 import matplotlib as matplot
@@ -297,10 +307,7 @@ settings = dict({"ticker_file": "tickers.csv",
                 })
 
 # GET DATA
-#data = get_data(settings["ticker_file"], settings["markets_target"])
-data_path = os.getcwd() + "\\app\\src\\data\\BTC_NEO_100.csv"
-data = pd.read_csv(data_path, delimiter = ",")
-data = data.drop('Unnamed: 0', axis=1)
+data = get_data(settings["ticker_file"], settings["markets_target"])
 
 # Display
 fig = plt.figure(figsize=(21,7))
@@ -517,3 +524,7 @@ plt.plot(tab_tmp[:,0],tab_tmp[:,1], "g", label="capital")
 plt.grid()
 plt.legend()
 plt.show()                       
+
+
+```
+
