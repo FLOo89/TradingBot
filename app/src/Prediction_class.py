@@ -103,4 +103,15 @@ tab_tmp = np.array(tab_capital)
 plt.plot(tab_tmp[:,0],tab_tmp[:,1], "g", label="capital")
 plt.grid()
 plt.legend()
-plt.show()                       
+plt.show() 
+
+returns=0   
+mean_return=[]
+for i in range (0,len(buy_invest)):
+    returns+=buy_invest[i]-sell_invest[i]
+    mean_return.append(buy_invest[i]-sell_invest[i])
+    
+print("Return for test period=")
+print(returns/capital)
+print("Mean return for test period by operation=")
+print(np.mean(mean_return)/capital)
