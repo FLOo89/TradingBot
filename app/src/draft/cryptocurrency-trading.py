@@ -23,13 +23,8 @@ from keras.layers import Embedding, LSTM, Flatten,Dense, Dropout, Activation
 from keras.utils import to_categorical
 from keras.optimizers import SGD
 from keras.callbacks import LearningRateScheduler
-from IPython.display import clear_output
 import h5py
 
-
-# choose which theme to inherit plotting style from
-# onedork | grade3 | oceans16 | chesterish | monokai | solarizedl | solarizedd
-jtplot.style(theme='solarizedd')
 
 print("Library version:")
 print("\t-  pandas: {}".format(pd.__version__))

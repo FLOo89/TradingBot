@@ -9,11 +9,10 @@ Created on Fri Mar 27 11:50:48 2020
 import time
 import Neuronal_class as ne
 import numpy as np
-# base import
 
+# base import
 import matplotlib as matplot
 import matplotlib.pyplot as plt
-from IPython.display import clear_output
 
 
 
@@ -117,6 +116,7 @@ print("Return for test period=")
 print(returns/capital)
 print("Mean return for test period by operation=")
 print(np.mean(mean_return)/capital)
+
 =======
 # -*- coding: utf-8 -*-
 """

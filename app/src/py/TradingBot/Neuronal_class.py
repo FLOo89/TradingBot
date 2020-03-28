@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Fri Mar 27 11:38:08 2020
 
-
-"""
 # base import
 # base import
 import pandas as pd

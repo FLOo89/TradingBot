@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Fri Mar 27 11:28:49 2020
 
-"""
 import numpy as np
 
 def Strategy():
@@ -10,7 +7,6 @@ def Strategy():
     def __init__(self, maxtab,mintab):
         self.maxtab = []
         self.mintab = []
-       
         
     # Peaks detection function
     def peakdet(self,v, delta, x = None):
