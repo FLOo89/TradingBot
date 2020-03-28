@@ -36,3 +36,6 @@ agogique, et pour des exemples plus aboutis:
 - Cette librairie constitue sans doute la plus complète avec de nombreux modèles
 - Ce tutoriel tu ou celui-là pour des approches plus récentes et complexes sous CNTK. Les librairies suivantes ont l’air assez abouties:
 - Cette librairie documente un unique modèle assez complexe
+
+
+
