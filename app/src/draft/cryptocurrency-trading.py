@@ -37,7 +37,7 @@ print("\t-  python: {}".format(sys.version[:sys.version.find('(') - 1]))
 class Normalisation:
     def __init__(self, data):
         self.__marketList = [e["name"] for e in data]
-        self.__data = [e["data"] for e in data]
+        self.__data = data #[e["data"] for e in data]
         self.__format = False
         
         
@@ -289,16 +289,16 @@ settings = dict({"ticker_file": "tickers.csv",
 
 # GET DATA
 #data = get_data(settings["ticker_file"], settings["markets_target"])
-data_path = os.getcwd() + "\\app\\src\\data\\BTC_NEO_100.csv"
+data_path = "C:\\Users\\33662\\Documents\\TradingBot\\app\\src\\data\\BTC_NEO_100.csv"
 data = pd.read_csv(data_path, delimiter = ",")
 data = data.drop('Unnamed: 0', axis=1)
 
 # Display
-fig = plt.figure(figsize=(21,7))
-data[0]["data"]["bid"].plot(label="bid", title="Bid curve")
-plt.grid()
-plt.legend()
-plt.show()
+#fig = plt.figure(figsize=(21,7))
+#data[0]["data"]["bid"].plot(label="bid", title="Bid curve")
+#plt.grid()
+#plt.legend()
+#plt.show()
 
 # NORMALIZATION OF THE DATA
 norm = Normalisation(data)

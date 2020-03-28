@@ -1,12 +1,14 @@
 ############
 # FRONTEND #
 ############
-options(rsconnect.max.bundle.size  = 3145728000,
-        rsconnect.max.bundle.files = 20000 )
+# options(rsconnect.max.bundle.size  = 3145728000,
+#         rsconnect.max.bundle.files = 20000 )
 
 source('global.R', encoding = "UTF-8")
 
-ui <- dashboardPage(
+ui <- dashboardPagePlus(
+  skin ="red",
+  md   = T,
   header  = dashboardHeaderPlus(
     title = "Bot de Trading"
   ),

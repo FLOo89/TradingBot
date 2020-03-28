@@ -19,7 +19,7 @@ library(plotly)
 
 library(reticulate)
 
-print(py_config())
+#(py_config())
 
 # A ajouter quand le modele compilera
 #print(paste0(getwd(),"/env/Scripts/python.exe"))
