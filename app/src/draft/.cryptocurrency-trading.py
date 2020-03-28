@@ -26,10 +26,6 @@ from keras.callbacks import LearningRateScheduler
 from IPython.display import clear_output
 import h5py
 
-# import jtplot module in notebook
-from jupyterthemes import jtplot
-
-from bittrex.bittrex import Bittrex, API_V2_0
 
 # choose which theme to inherit plotting style from
 # onedork | grade3 | oceans16 | chesterish | monokai | solarizedl | solarizedd

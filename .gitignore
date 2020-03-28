@@ -2,3 +2,6 @@
 .Rhistory
 .RData
 .Ruserdata
+./app/env/*
+./app/rsconnet/*
+./app/.RProfile

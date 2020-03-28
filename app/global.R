@@ -5,6 +5,13 @@
 library(shiny)
 library(shinydashboard)
 library(shinydashboardPlus)
+library(DT)
+
+#-------------------------------------#
+# Pour les plot dynamiques            #
+#-------------------------------------#
+
+library(plotly)
 
 #-------------------------------------#
 # Bridge de Python vers R             #
@@ -12,8 +19,11 @@ library(shinydashboardPlus)
 
 library(reticulate)
 
-#-------------------------------------#
-# Pour les plot dynamiques            #
-#-------------------------------------#
+print(py_config())
 
-library(plotly)
+# A ajouter quand le modele compilera
+#print(paste0(getwd(),"/env/Scripts/python.exe"))
+#use_python(paste0(getwd(),"/env/Scripts/python.exe"), required = T)
+#use_virtualenv("env", required = F)
+
+#source_python('src/get_data.py')
